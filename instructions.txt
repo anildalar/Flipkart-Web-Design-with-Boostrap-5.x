@@ -1,0 +1,4 @@
+Ctrl + F = Find
+Ctrl + U = View Source Code
+
+https://t.me/oklabs
