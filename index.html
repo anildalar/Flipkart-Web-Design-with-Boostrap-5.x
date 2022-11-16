@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books &amp; More. Best Offers!</title>
         <link rel="shortcut icon" href="./favicon.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!--
             HTML Comment
             <link rel="icon" href="./favicon.png" type="image/gif" sizes="16x16">
@@ -15,16 +16,13 @@
             .a_tbdr{
                 border:1px dashed red;
             }
-            header{
-               
-            }
             .a_header_top{
-                height:70px;
+                height:60px;
                 background-color: #2874f0;
                 z-index: 10000;
             }
             .a_header_bottom{
-                margin-top: 70px;
+                margin-top: 60px;
                 height:98px;
             
             }
@@ -45,6 +43,13 @@
             .a_footer_bottom > div:last-child{
                 height:72px;
             }
+            .a_plus{
+                /*
+                    CSS Syntax
+                    background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit;
+                */
+                background: url("./img/plus.png") right center/contain no-repeat;
+            }
             @media (min-width: 1400px){
                 .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
                     max-width: 1248px;
@@ -57,7 +62,35 @@
         <div class="container-fluid p-0 a_tbdr">
             <header class="a_tbdr">
                 <div class="a_header_top a_tbdr position-fixed w-100 top-0 start-0">
-                    <div class="container h-100 a_tbdr ">Header Top</div>
+                    <div class="container h-100 a_tbdr ">
+                        <div class="row h-100">
+                            <div class="col-1 a_tbdr h-100 p-1">
+                                <div class="d-grid">
+                                    <a href="#home" class="text-white">
+                                        <img src="./img/logo.png" class="img-fluid" />
+                                    </a> 
+                                    <a href="#plus" class="text-white text-center fs-6 fst-italic a_plus" style="font-size:0.7em !important;">Explore Plus </a>
+                                </div>                                
+                            </div>
+                            <div class="col-6 a_tbdr h-100 p-2">
+                                <form class="bg-white h-100 rounded-1 shadow-sm">
+                                    <div class="row">
+                                        <div class="col-10" >
+                                            <input class="form-control border-0" placeholder="Search for products, brands and more" />
+                                        </div>
+                                        <div class="col-2">
+                                            <button type="submit" class="btn float-end">
+                                                <i class="fa-solid fa-magnifying-glass text-primary"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    
+                                   
+                                </form>
+                            </div>
+                            <div class="col-5 a_tbdr h-100">C</div>
+                        </div>
+                    </div>
                 </div>
                 <div class="a_header_bottom a_tbdr">
                     <div class="container h-100 a_tbdr ">
@@ -142,5 +175,6 @@
             </footer>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js" integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     </body>
 </html>
