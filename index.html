@@ -70,6 +70,28 @@
             .a_inputsearchhint a:hover{
                 background:#f4f8ff;
             }
+            .a_submenu{
+                width:280px;
+                left:-100px;
+                top:55px;
+            }
+            .arrow-up {
+                width: 0; 
+                height: 0; 
+                border-left: 15px solid transparent;
+                border-right: 15px solid transparent;
+                
+                border-bottom: 15px solid #fff;
+                position: absolute;
+                top:-15px;
+                left:120px;
+            }
+            ul.a_menu > li:hover ul.a_submenu{
+                display: block !important;
+            }
+            ul.a_submenu > li:hover{
+                background:#ccc;
+            }
             @media (min-width: 1400px){
                 .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
                     max-width: 1248px;
@@ -138,9 +160,34 @@
                                 </form>
                             </div>
                             <div class="col-5 a_tbdr h-100">
-                                <ul class="nav h-100">
-                                    <li class="nav-item h-100">
-                                      <a class="nav-link pt-3 h-100 text-white active" aria-current="page" href="#">Login</a>
+                                <ul class="nav a_menu h-100">
+                                    <li class="nav-item h-100 position-relative" style="cursor:pointer;">
+                                      <a class="nav-link pt-1 ps-3 h-50 rounded-1 mt-3  active bg-white text-primary a_login" aria-current="page" href="#">Login</a>
+                                      <ul class="nav flex-column a_submenu bg-white shadow-sm position-absolute d-none">
+                                        <div class="arrow-up"></div>
+                                        <li class="nav-item">
+                                            <a href="#" class="btn btn-link text-decoration-none">New Customer?</a>
+                                            <a href="#" class="btn btn-link text-decoration-none"> Signup</a>
+                                        </li>
+                                        <li class="nav-item border-bottom">
+                                            <a href="#" class="btn ps-3 w-100 rounded-0 text-start text-decoration-none"> <i class="fa-solid fa-user me-3"></i> My Profile</a>
+                                        </li>
+                                        <li class="nav-item border-bottom">
+                                            <a href="#" class="btn ps-3 w-100 rounded-0 text-start text-decoration-none"> <i class="fa-solid fa-user me-3"></i> My Profile</a>
+                                        </li>
+                                        <li class="nav-item border-bottom">
+                                            <a href="#" class="btn ps-3 w-100 rounded-0 text-start text-decoration-none"> <i class="fa-solid fa-user me-3"></i> My Profile</a>
+                                        </li>
+                                        <li class="nav-item border-bottom">
+                                            <a href="#" class="btn ps-3 w-100 rounded-0 text-start text-decoration-none"> <i class="fa-solid fa-user me-3"></i> My Profile</a>
+                                        </li>
+                                        <li class="nav-item border-bottom">
+                                            <a href="#" class="btn ps-3 w-100 rounded-0 text-start text-decoration-none"> <i class="fa-solid fa-user me-3"></i> My Profile</a>
+                                        </li>
+                                        <li class="nav-item ">
+                                            <a href="#" class="btn ps-3 w-100 rounded-0 text-start text-decoration-none"> <i class="fa-solid fa-user me-3"></i> My Profile</a>
+                                        </li>
+                                      </ul>
                                     </li>
                                     <li class="nav-item h-100">
                                       <a class="nav-link pt-3 h-100 text-white" href="#">Become a Seller</a>
