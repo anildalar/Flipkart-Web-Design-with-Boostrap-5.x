@@ -19,10 +19,10 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
         <style>
             body{
-                font-family: 'Roboto',Arial, sans-serif;
+                font-family: 'Roboto',Arial, sans-serif !important;
             }
             .a_tbdr{
-                border:1px dashed red;
+                border:1px dashed #000;
             }
             .a_header_top{
                 height:60px;
@@ -90,7 +90,33 @@
                 display: block !important;
             }
             ul.a_submenu > li:hover{
-                background:#ccc;
+                background:#fafafa;
+            }
+            .a_bottom_menu > li{
+                position:relative;
+            }
+            .a_bottom_menu > li:hover > ul{
+                display: block !important;
+            }
+            .a_bottom_submenu{
+                width:430px;
+                height:450px;
+                z-index: 1000;
+                left:-150px;
+                top:95px;
+            }
+            .a_bottom_submenu_submenu > li:hover > ul{
+                display: block !important;
+            }
+            .a_bottom_submenu_submenu{
+                position: relative;
+            }
+            .a_bottom_submenu_submenu_submenu{
+               width:230px;
+               height:450px;
+            }
+            .a_bottom_submenu_submenu > li:first-child > ul{
+                display: block !important;
             }
             @media (min-width: 1400px){
                 .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
@@ -162,7 +188,7 @@
                             <div class="col-5 a_tbdr h-100">
                                 <ul class="nav a_menu h-100">
                                     <li class="nav-item h-100 position-relative" style="cursor:pointer;">
-                                      <a class="nav-link pt-1 ps-3 h-50 rounded-1 mt-3  active bg-white text-primary a_login" aria-current="page" href="#">Login</a>
+                                      <a class="nav-link pt-1 pb-2 ps-3 h-50 rounded-0 mt-3  active bg-white text-primary a_login" aria-current="page" href="#">Login</a>
                                       <ul class="nav flex-column a_submenu bg-white shadow-sm position-absolute d-none">
                                         <div class="arrow-up"></div>
                                         <li class="nav-item">
@@ -208,7 +234,7 @@
                         <nav class="navbar navbar-expand-lg h-100 p-0">
                             <div class="container-fluid h-100">
                               <div class="collapse navbar-collapse h-100" id="navbarNav">
-                                <ul class="navbar-nav h-100">
+                                <ul class="navbar-nav h-100 a_bottom_menu">
                                   <li class="nav-item me-4">
                                     <a class="nav-link active h-100" aria-current="page" href="#">
                                         <img class="img-fluid" width="60" src="./img/header/nav_bottom/1.webp" />
@@ -224,19 +250,60 @@
                                   <li class="nav-item me-4">
                                     <a class="nav-link h-100" aria-current="page" href="#">
                                         <img class="img-fluid" width="60" src="./img/header/nav_bottom/1.webp" />
-                                        <br>Top Offers
+                                        <br>Mobiles
                                     </a>
                                   </li>
                                   <li class="nav-item me-4">
                                     <a class="nav-link h-100" aria-current="page" href="#">
                                         <img class="img-fluid" width="60" src="./img/header/nav_bottom/1.webp" />
-                                        <br>Top Offers
+                                        <br>Fashion
+                                    </a>
+                                    <ul class="nav row a_bottom_submenu d-none bg-white shadow-sm position-absolute">
+                                        <li class="col-6 ">
+                                            <ul class="nav flex-column a_bottom_submenu_submenu">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active"  href="#">Mens Top Wear</a>
+                                                    <ul class="p-2 nav flex-column a_bottom_submenu_submenu_submenu position-absolute start-100 top-0 shadow d-none">
+                                                        <li>More in Men's Top wear</li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link active" href="#">All</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href="#">Men's TShirts</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#">Mens Bottom Wear</a>
+                                                    <ul class="a_bottom_submenu_submenu_submenu position-absolute start-100 top-0 bg-white shadow d-none"></ul>
+                                                </li>
+                                            </ul>  
+                                        </li>
+                                        <li class="col-6">B</li>
+                                    </ul>
+                                  </li>
+                                  <li class="nav-item me-4">
+                                    <a class="nav-link h-100" aria-current="page" href="#">
+                                        <img class="img-fluid" width="60" src="./img/header/nav_bottom/1.webp" />
+                                        <br>Electronics
                                     </a>
                                   </li>
                                   <li class="nav-item me-4">
                                     <a class="nav-link h-100" aria-current="page" href="#">
                                         <img class="img-fluid" width="60" src="./img/header/nav_bottom/1.webp" />
-                                        <br>Top Offers
+                                        <br>HOme
+                                    </a>
+                                  </li>
+                                  <li class="nav-item me-4">
+                                    <a class="nav-link h-100" aria-current="page" href="#">
+                                        <img class="img-fluid" width="60" src="./img/header/nav_bottom/1.webp" />
+                                        <br>Appliances
+                                    </a>
+                                  </li>
+                                  <li class="nav-item me-4">
+                                    <a class="nav-link h-100" aria-current="page" href="#">
+                                        <img class="img-fluid" width="60" src="./img/header/nav_bottom/1.webp" />
+                                        <br>Travel
                                     </a>
                                   </li>
                                 </ul>
