@@ -38,6 +38,7 @@
                 height:7450px;
                 background:#f1f3f6;
             }
+            
             .a_footer_top{
                 height:2640px;
             }
@@ -117,6 +118,17 @@
             }
             .a_bottom_submenu_submenu > li:first-child > ul{
                 display: block !important;
+            }
+
+            .carousel-control-next, .carousel-control-prev {
+                width:3%;
+                background: #fff !important;
+                opacity: 1 !important;
+                height:40%;
+                top: 68px;
+            }
+            .a_main_2{
+                height:360px;
             }
             @media (min-width: 1400px){
                 .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
@@ -314,7 +326,7 @@
                 </div>
             </header>
             <main class="a_tbdr p-1 pt-2">
-                <section class="a_main_1 a_tbdr">
+                <section class="a_main_1 a_tbdr mb-2">
                     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" >
                         <div class="carousel-inner">
                           <div class="carousel-item active">
@@ -327,15 +339,75 @@
                             <img src="./img/slider/1.webp" class="d-block w-100" alt="..." style="height:280px">
                           </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
+                        <button class="carousel-control-prev rounded-end shadow-sm" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                            <i class="fa-solid fa-chevron-left text-dark fs-3"></i>
+                            <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <button class="carousel-control-next rounded-start shadow-sm" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                            <i class="fa-solid fa-chevron-right text-dark fs-3"></i>
                           <span class="visually-hidden">Next</span>
                         </button>
                       </div>
+                </section>
+                <section class="a_main_2 a_tbdr mb-2">
+                    <div class="row m-0 h-100">
+                        <div class="col-10 a_tbdr">
+                            <div class="row h-100">
+                                <div class="col-2 a_tbdr text-center">
+                                    <div class="d-flex align-items-center h-100">
+                                        <h3 class="align-self-center">Best of Electronics</h3><br>
+                                        <button class="btn btn-primary rounded-1 align-self-center">View All</button>
+                                    </div>                                    
+                                </div>
+                                <div class="col-10 a_tbdr">
+                                    <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                          <div class="carousel-item active">
+                                            <img src="..." class="d-block w-100" alt="...">
+                                          </div>
+                                          <div class="carousel-item">
+                                            <img src="..." class="d-block w-100" alt="...">
+                                          </div>
+                                          <div class="carousel-item">
+                                            <img src="..." class="d-block w-100" alt="...">
+                                          </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+                                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                          <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+                                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                          <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 ps-1 pe-1 a_tbdr">
+                            <a href="#">
+                                <img class="img-fluid img-thumbnail h-100 w-100" src="./img/main/section2/banner.webp" />
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <section class="a_main_2 a_tbdr mb-2 mt-4">
+
+                </section>
+                <section class="a_main_2 a_tbdr mb-2">
+
+                </section>
+                <section class="a_main_2 a_tbdr mb-2">
+
+                </section>
+                <section class="a_main_2 a_tbdr mb-2">
+
+                </section>
+                <section class="a_main_2 a_tbdr mb-2">
+
+                </section>
+                <section class="a_main_2 a_tbdr mb-2">
+
                 </section>
             </main>
             <footer>
